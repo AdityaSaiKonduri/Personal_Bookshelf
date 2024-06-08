@@ -7,7 +7,7 @@ import Bookshelf from './components/Bookshelf';
 function App() {
     return (
         <Router>
-            <div className="dark:bg-gray-800 min-h-screen dark:text-white">
+            <div className="dark:bg-gray-800 min-h-screen dark:text-white custom-scrollbar-html">
                 <Navbar />
                 <Routes>
                     <Route path="/" element={<Library />} />
