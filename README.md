@@ -27,5 +27,16 @@ Ensure you have the following installed on your machine:
    Clone the forked repository to your local machine using the following command, replacing `YOUR_GITHUB_USERNAME` with your GitHub username:
 
    ```sh
-   git clone https://github.com/YOUR_GITHUB_USERNAME/library-bookshelf-app.git
+   git clone https://github.com/YOUR_GITHUB_USERNAME/personal_bookshelf.git
    
+3. **Navigate to the project directory**
+    ```sh
+    cd persona_bookshelf
+4. **Install Dependencies**
+    ```sh
+    npm install
+5. **Start the development server**
+    ```sh
+    npm start 
+6. **The project is running on local host now**
+`http://localhost:3000`
