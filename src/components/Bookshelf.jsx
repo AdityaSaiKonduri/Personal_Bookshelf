@@ -1,9 +1,14 @@
-import React from 'react';
+import React, { useState } from 'react';
 import BookshelfCard from './BookshelfCard';
-import { useState } from 'react';
 
 function Bookshelf() {
   const [bookshelf, setBookshelf] = useState(JSON.parse(localStorage.getItem('bookshelf')) || []);
+
+  const removeBook = (title) => {
+    const updatedBookshelf = bookshelf.filter(book => book.title !== title);
+    setBookshelf(updatedBookshelf);
+    localStorage.setItem('bookshelf', JSON.stringify(updatedBookshelf));
+  };
 
   const clearBookshelf = () => {
     localStorage.removeItem('bookshelf');
@@ -27,6 +32,7 @@ function Bookshelf() {
                 title={book.title}
                 author={book.author}
                 editionCount={book.editions}
+                onRemove={() => removeBook(book.title)}
               />
             ))}
           </div>
