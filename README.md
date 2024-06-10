@@ -40,3 +40,9 @@ Ensure you have the following installed on your machine:
     npm start 
 6. **The project is running on local host now**
 `http://localhost:3000`
+
+## Features of the website
+1. Responsive Design: Compatible with a wide range of screen sizes. Achieved through Tailwind CSS breakpoints.
+2. Real-Time Updates: The API request is made every time there is a change in the input field.
+3. Light and Dark Mode : Depends on the system setting of the theme.
+4. Simple Navigation : Only two pages to navigate.
